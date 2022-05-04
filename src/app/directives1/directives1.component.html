@@ -1,0 +1,86 @@
+
+<h1>Example of ngClass</h1>
+
+<div [ngClass]="target  ? 'value1' : 'value2'">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, neque.</p>
+</div>
+
+
+
+<div [ngClass]="target1">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, dignissimos?
+    </p>
+</div>
+
+<hr>
+
+<h1>Example of ngStyle</h1>
+<div [ngStyle]="{'color':'red','font-size':'20px'}">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia omnis incidunt aspernatur voluptate quas cupiditate.</p>
+</div>
+
+<div [ngStyle]="target2">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia omnis incidunt aspernatur voluptate quas cupiditate.</p>
+</div> <hr>
+
+
+
+<!-- <div *ngFor="let pd of product"> 
+    <div class="product-container">
+         <div class="image-container"><img src ="pd.image"> 
+            <div class="name-container">{{pd.name}}</div>
+             <div class="detailContainer">
+                     <div class="details">price:{{pd.price}}</div>
+                     <div class="details">color:{{pd.color}}</div>
+                     
+                     <div class="details">Available</div>
+                     
+
+
+             </div>
+        </div>
+    </div>
+     -->
+     <h1>ngFor Example</h1>
+    <div class="container">
+    <table class="table table-striped">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Color</th>
+            <th>Image</th>
+        </tr>
+
+        <tr *ngFor="let pd of product">
+           
+            <td>{{pd.id}}</td>
+            <td>{{pd.name}}</td>
+            <td>{{pd.price}}</td>
+            <td>{{pd.color}}</td>
+            <td><img src="{{pd.image}}" alt="" width="80px" height="100px"></td>
+        
+        </tr>
+
+
+
+    </table>
+</div>
+<hr>
+<h1>ngSwitch Example</h1>
+
+<div [ngSwitch]="City">
+    <div *ngSwitchCase="'Mumbai'"> <b>Your City is Mumbai</b> </div>
+    <div *ngSwitchCase="'Pune'"><b> Your City is Pune</b></div>
+    <div *ngSwitchCase="'Solapur'"><b> Your City is Solapur</b></div>
+    <div *ngSwitchCase="'Aurangabad'"><b> Your City is Aurangabad</b></div>
+
+
+
+</div>
+<hr>
+
+
+<h1>Style</h1>
+<h1 [style.color]="color1">Style Properties</h1>
+<button (click)="ColorChange()" (dblclick)="chnge()">Color Change</button>

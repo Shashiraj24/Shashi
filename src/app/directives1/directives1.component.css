@@ -1,0 +1,41 @@
+.value1{
+    font-size: 20px;
+    color: aqua;
+}
+
+.value2{
+    font-size: 20px;
+    color: rgb(145, 255, 0);
+}
+
+.value3{
+    font-size: 30px;
+    color: brown;
+}
+
+
+/* .product-container{
+    display:flex;
+    margin: 15px 0px;
+    padding: 5px 5px;
+    border-radius: 5px;
+
+}
+.image-container{
+    background-color: aquamarine;
+    height: 70px;
+    width: 70px;
+    padding:10px 0px;
+    text-align: center;
+
+}
+.detailContainer{
+    display: flex;
+    margin:0px 20px;
+}
+.name-container{
+    margin:0px 20px;
+}
+.details{
+    width:140px;
+} */

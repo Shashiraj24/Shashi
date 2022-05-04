@@ -1,0 +1,20 @@
+
+
+<h1>Data Binding</h1>
+
+<H1>{{data}}</H1>
+
+
+ <!-- <a href="{{imageurl}}">link</a>  -->
+<!-- <a [href]="{{imageurl}}">link</a> -->
+
+<a [href]="link"> Go to link </a> <hr>
+
+<h2>Event Binding</h2>
+
+<button (click)="onclick()">Submit</button><hr>
+
+<h1>Two way Data Binding</h1>
+Enter Name: <input class="form-control" type="text" name="" [(ngModel)]="FullName"><br>
+
+Your Name Is : {{FullName}}

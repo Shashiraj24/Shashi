@@ -1,0 +1,9 @@
+.container{
+    background-color: azure;
+   size: 500px;
+   font-size: 20px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   position: relative;
+ box-shadow: 200px;
+  
+}
